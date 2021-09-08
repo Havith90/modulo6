@@ -72,3 +72,29 @@ end
 
 print numeros_comienzan_y_terminan_7([])
 puts
+
+
+#ejercicio 1
+
+def generador_de_arreglos_10()
+    arreglo = []
+    for i in 0..9
+        arreglo << rand(0..100) 
+    end
+    return arreglo
+end
+
+print generador_de_arreglos_10
+puts
+
+def generador_de_arreglos_n(n)
+    arreglo =[]
+    for i in 0..n-1
+        arreglo << rand(0..100)
+    end
+    return arreglo
+end
+
+print "ingrese el largo del arreglo"
+largo = gets.chomp.to_i
+puts
