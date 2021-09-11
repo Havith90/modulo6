@@ -39,3 +39,7 @@ module ModuloMenu
             end
                 puts "Presione ENTER para continuar"
             gets
+        end
+    end
+
+end
