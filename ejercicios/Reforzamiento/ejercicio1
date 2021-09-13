@@ -1,0 +1,20 @@
+#ejercicio 1  Suma en forma de fila
+
+puts "Ingrese sus números separados por un espacio"
+puts "Ejemplo: 1 2"
+cadena_numeros = gets 
+# "1 2"
+puts "Tu ingreso fue"
+separados = cadena_numeros.split(" ")
+# ["1", "2"]
+
+acumulador = 0
+separados.each { |numero_separado| #recorrer los números separados
+#    puts "valor: #{numero_separado}" #para comprobar que está ejecutándose
+    acumulador += numero_separado.to_i
+}
+
+puts acumulador
+
+
+#existe la prueba de escritorio, que ayuda a entender lo que se está haciendo escribiendo y dibujando sobre el código

@@ -1,0 +1,9 @@
+#Sumar solo pares
+#dado un número n
+puts "Ingrese un número"
+n = gets.to_i  # 10
+
+#generar números al azar
+for i in 1..n
+    puts rand(1..100)
+end
