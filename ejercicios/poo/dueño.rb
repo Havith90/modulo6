@@ -6,6 +6,11 @@ class Dueño
     attr_accessor :nombre
     attr_accessor :animalito # nil
 
+    def initialize(nombre = "", animalito = nil)
+        @nombre     = nombre    # String
+        @animalito  = animalito # Nil
+    end
+
     def mostrar_datos_mascota
         if @animalito != nil # si es nil o false entonces es falso
             puts "#{@animalito.nombre} - #{@animalito.raza}"
@@ -36,3 +41,9 @@ mascota1.estoy_vacunado?
 puts
 puts mascota1
 puts dueño
+
+mascotas = []
+
+for i in 1..10
+    mascotas << Mascota.new
+end

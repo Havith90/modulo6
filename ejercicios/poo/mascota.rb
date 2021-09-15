@@ -1,4 +1,4 @@
-require_relative 'dueño' # nombre del archivo
+#require_relative 'dueño' # nombre del archivo
 
 class Mascota
     # atributos
@@ -7,6 +7,13 @@ class Mascota
     attr_accessor :raza
     attr_accessor :esta_vacunado
     attr_accessor :esta_operado
+
+    def initialize(nombre = "", raza = "", esta_vacunado = false, esta_operado = false)
+        @nombre         = nombre.upcase
+        @raza           = raza.upcase
+        @esta_vacunado  = esta_vacunado
+        @esta_operado   = esta_operado
+    end
 
     def estoy_vacunado?
         if @esta_vacunado == true

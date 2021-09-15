@@ -19,24 +19,42 @@ class Monstruo
     
 
 end    
-    monstruo1 = Monstruo.new
-    monstruo1.nombre = "Jeyson"
-    monstruo1.vida = 3
-    monstruo1.ataque = 2
-
-    puts monstruo1
-    puts 
-
-
-    monstruo2 = Monstruo.new
-    monstruo2.nombre = "Patricio"
-    monstruo2.vida = 5
-    monstruo2.ataque = 5
-
-    monstruo1.atacar monstruo2 
    
-    monstruo1.atacar monstruo2
-    monstruo1.atacar monstruo2
-    monstruo1.atacar monstruo2
-    puts monstruo1
-    puts monstruo2
+#Código monstruo de René
+
+# class Monstruo
+
+#     attr_accessor :nombre
+#     attr_accessor :vida
+#     attr_accessor :ataque
+
+#     def initialize(nombre = "", vida = 0, ataque = 0)
+#         @nombre = nombre
+#         @vida   = vida
+#         @ataque = ataque
+#     end
+
+#     # def initialize(nombre = Faker::Games::StreetFighter.character, vida = rand(100..150), ataque = rand(10..15))    
+#     #     @nombre = nombre    
+#     #     @vida   = vida    
+#     #     @ataque = ataque
+#     # end
+
+
+
+#     def atacar(monstruo_enemigo)
+#         monstruo_enemigo.vida -= @ataque
+#     end
+
+#     def to_s
+#           "#{@nombre} | #{@vida} | #{@ataque}"
+
+#     # def atacar (monstruo)
+#     #     quien_ataca = rand(1..2)
+#     #     if quien_ataca == 1 
+#     #         monstruo2.vida -= monstruo1.ataque
+#     #     else
+#     #         monstruo1.vida -= monstruo2.ataque
+#     #     end
+#     # end
+end
