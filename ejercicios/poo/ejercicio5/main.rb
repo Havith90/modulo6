@@ -1,5 +1,5 @@
 class Main
-    require_relative 'monstruo'
+    require_relative 'batalla'
     
     
     monstruo1 = Monstruo.new
@@ -28,17 +28,26 @@ puts "El monstruo Patricio muere"
 
     #main René
 
-#     require_relative 'monstruo'
+#     require_relative 'batalla'
 
-# monstruo1 = Monstruo.new("Matador", 50, 5)
-# monstruo2 = Monstruo.new("Temerario", 30, 10)
+# batalla_nocturna = Batalla.new
+# batalla_nocturna.comenzar
 
-# puts monstruo1.vida
-# puts monstruo2.vida
+*****
 
-# # monstruo1 ataca al monstruo2
-# monstruo1.atacar(monstruo2)
+# batalla_nocturna = Batalla.new
+# batalla_nocturna.comenzar
+# batalla_nocturna = Batalla.new
+# batalla_nocturna.comenzar
+# batalla_nocturna = Batalla.new
+# batalla_nocturna.comenzar
 
-# puts monstruo1.vida
-# puts monstruo2.vida
+## monstruo1 = Monstruo.new("Matador", 50, 5)
+## monstruo2 = Monstruo.new("Temerario", 30, 10)
+
+monstruo3 = GeneradorMonstruos.generar
+monstruo4 = GeneradorMonstruos.generar
+
+
+
 
